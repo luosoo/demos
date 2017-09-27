@@ -1,73 +1,75 @@
-# HTTPÐ­ÒéÏê½â
+ï»¿# HTTPåè®®è¯¦è§£
 
-## Ê²Ã´ÊÇHTTPÐ­Òé
+## ä»€ä¹ˆæ˜¯HTTPåè®®
 
-Ð­ÒéÊÇÖ¸¼ÆËã»úÍ¨ÐÅÍøÂçÖÐÁ½Ì¨¼ÆËã»úÖ®¼ä½øÐÐÍ¨ÐÅËù±ØÐë¹²Í¬×ñÊØµÄ¹æ¶¨»ò¹æÔò£¬³¬ÎÄ±¾´«ÊäÐ­Òé(HTTP)ÊÇÒ»ÖÖÍ¨ÐÅÐ­Òé£¬ËüÔÊÐí½«³¬ÎÄ±¾±ê¼ÇÓïÑÔ(HTML)ÎÄµµ´ÓWeb·þÎñÆ÷´«ËÍµ½¿Í»§¶ËµÄä¯ÀÀÆ÷¡£
+åè®®æ˜¯æŒ‡è®¡ç®—æœºé€šä¿¡ç½‘ç»œä¸­ä¸¤å°è®¡ç®—æœºä¹‹é—´è¿›è¡Œé€šä¿¡æ‰€å¿…é¡»å…±åŒéµå®ˆçš„è§„å®šæˆ–è§„åˆ™ï¼Œè¶…æ–‡æœ¬ä¼ è¾“åè®®(HTTP)æ˜¯ä¸€ç§é€šä¿¡åè®®ï¼Œå®ƒå…è®¸å°†è¶…æ–‡æœ¬æ ‡è®°è¯­è¨€(HTML)æ–‡æ¡£ä»ŽWebæœåŠ¡å™¨ä¼ é€åˆ°å®¢æˆ·ç«¯çš„æµè§ˆå™¨ã€‚
 
-## Web·þÎñÆ÷£¬ä¯ÀÀÆ÷£¬´úÀí·þÎñÆ÷
+## WebæœåŠ¡å™¨ï¼Œæµè§ˆå™¨ï¼Œä»£ç†æœåŠ¡å™¨
 
-µ±ÎÒÃÇ´ò¿ªä¯ÀÀÆ÷£¬ÔÚµØÖ·À¸ÖÐÊäÈëURL£¬È»ºóÎÒÃÇ¾Í¿´µ½ÁËÍøÒ³¡£ Ô­ÀíÊÇÔõÑùµÄÄØ£¿
-Êµ¼ÊÉÏÎÒÃÇÊäÈëURLºó£¬ÎÒÃÇµÄä¯ÀÀÆ÷¸øWeb·þÎñÆ÷·¢ËÍÁËÒ»¸öRequest, Web·þÎñÆ÷½Óµ½Requestºó½øÐÐ´¦Àí£¬Éú³ÉÏàÓ¦µÄResponse£¬È»ºó·¢ËÍ¸øä¯ÀÀÆ÷£¬ ä¯ÀÀÆ÷½âÎöResponseÖÐµÄHTML,ÕâÑùÎÒÃÇ¾Í¿´µ½ÁËÍøÒ³¡£ÎÒÃÇµÄRequest ÓÐ¿ÉÄÜÊÇ¾­¹ýÁË´úÀí·þÎñÆ÷£¬×îºó²Åµ½´ïWeb·þÎñÆ÷µÄ¡£
+å½“æˆ‘ä»¬æ‰“å¼€æµè§ˆå™¨ï¼Œåœ¨åœ°å€æ ä¸­è¾“å…¥URLï¼Œç„¶åŽæˆ‘ä»¬å°±çœ‹åˆ°äº†ç½‘é¡µã€‚ åŽŸç†æ˜¯æ€Žæ ·çš„å‘¢ï¼Ÿ
+å®žé™…ä¸Šæˆ‘ä»¬è¾“å…¥URLåŽï¼Œæˆ‘ä»¬çš„æµè§ˆå™¨ç»™WebæœåŠ¡å™¨å‘é€äº†ä¸€ä¸ªRequest, WebæœåŠ¡å™¨æŽ¥åˆ°RequeståŽè¿›è¡Œå¤„ç†ï¼Œç”Ÿæˆç›¸åº”çš„Responseï¼Œç„¶åŽå‘é€ç»™æµè§ˆå™¨ï¼Œ æµè§ˆå™¨è§£æžResponseä¸­çš„HTML,è¿™æ ·æˆ‘ä»¬å°±çœ‹åˆ°äº†ç½‘é¡µã€‚æˆ‘ä»¬çš„Request æœ‰å¯èƒ½æ˜¯ç»è¿‡äº†ä»£ç†æœåŠ¡å™¨ï¼Œæœ€åŽæ‰åˆ°è¾¾WebæœåŠ¡å™¨çš„ã€‚
 
-´úÀí·þÎñÆ÷¾ÍÊÇÍøÂçÐÅÏ¢µÄÖÐ×ªÕ¾£¬ÓÐÊ²Ã´¹¦ÄÜÄØ£¿
-1. Ìá¸ß·ÃÎÊËÙ¶È£¬ ´ó¶àÊýµÄ´úÀí·þÎñÆ÷¶¼ÓÐ»º´æ¹¦ÄÜ¡£
-2. Í»ÆÆÏÞÖÆ£¬ Ò²¾ÍÊÇFQÁË
-3. Òþ²ØÉí·Ý¡£
+ä»£ç†æœåŠ¡å™¨å°±æ˜¯ç½‘ç»œä¿¡æ¯çš„ä¸­è½¬ç«™ï¼Œæœ‰ä»€ä¹ˆåŠŸèƒ½å‘¢ï¼Ÿ
+1. æé«˜è®¿é—®é€Ÿåº¦ï¼Œ å¤§å¤šæ•°çš„ä»£ç†æœåŠ¡å™¨éƒ½æœ‰ç¼“å­˜åŠŸèƒ½ã€‚
+2. çªç ´é™åˆ¶ï¼Œ ä¹Ÿå°±æ˜¯FQäº†
+3. éšè—èº«ä»½ã€‚
 
-## URLÏê½â
+## URLè¯¦è§£
 
-URL(Uniform Resource Locator) µØÖ·ÓÃÓÚÃèÊöÒ»¸öÍøÂçÉÏµÄ×ÊÔ´£¬  »ù±¾¸ñÊ½ÈçÏÂ£º
+URL(Uniform Resource Locator) åœ°å€ç”¨äºŽæè¿°ä¸€ä¸ªç½‘ç»œä¸Šçš„èµ„æºï¼Œ  åŸºæœ¬æ ¼å¼å¦‚ä¸‹ï¼š
   schema://host[:port#]/path/.../[;url-params][?query-string][#anchor]
 
-scheme               Ö¸¶¨µÍ²ãÊ¹ÓÃµÄÐ­Òé(ÀýÈç£ºhttp, https, ftp)
-host                 HTTP·þÎñÆ÷µÄIPµØÖ·»òÕßÓòÃû
-port# ? ? ? ? ? ? ?  HTTP·þÎñÆ÷µÄÄ¬ÈÏ¶Ë¿ÚÊÇ80£¬ÕâÖÖÇé¿öÏÂ¶Ë¿ÚºÅ¿ÉÒÔÊ¡ÂÔ¡£Èç¹ûÊ¹ÓÃÁË±ðµÄ¶Ë¿Ú£¬±ØÐëÖ¸Ã÷£¬ÀýÈç http://www.cnblogs.com:8080/
-path ? ? ? ? ? ? ? ? ·ÃÎÊ×ÊÔ´µÄÂ·¾¶
+scheme               æŒ‡å®šä½Žå±‚ä½¿ç”¨çš„åè®®(ä¾‹å¦‚ï¼šhttp, https, ftp)
+host                 HTTPæœåŠ¡å™¨çš„IPåœ°å€æˆ–è€…åŸŸå
+port# ? ? ? ? ? ? ?  HTTPæœåŠ¡å™¨çš„é»˜è®¤ç«¯å£æ˜¯80ï¼Œè¿™ç§æƒ…å†µä¸‹ç«¯å£å·å¯ä»¥çœç•¥ã€‚å¦‚æžœä½¿ç”¨äº†åˆ«çš„ç«¯å£ï¼Œå¿…é¡»æŒ‡æ˜Žï¼Œä¾‹å¦‚ http://www.cnblogs.com:8080/
+path ? ? ? ? ? ? ? ? è®¿é—®èµ„æºçš„è·¯å¾„
 url-params
-query-string       ·¢ËÍ¸øhttp·þÎñÆ÷µÄÊý¾Ý
-anchor-             Ãª
+query-string       å‘é€ç»™httpæœåŠ¡å™¨çš„æ•°æ®
+anchor-             é”š
 
-## HTTPÐ­ÒéÊÇÎÞ×´Ì¬µÄ
+## HTTPåè®®æ˜¯æ— çŠ¶æ€çš„
 
-httpÐ­ÒéÊÇÎÞ×´Ì¬µÄ£¬Í¬Ò»¸ö¿Í»§¶ËµÄÕâ´ÎÇëÇóºÍÉÏ´ÎÇëÇóÊÇÃ»ÓÐ¶ÔÓ¦¹ØÏµ£¬¶Ôhttp·þÎñÆ÷À´Ëµ£¬Ëü²¢²»ÖªµÀÕâÁ½¸öÇëÇóÀ´×ÔÍ¬Ò»¸ö¿Í»§¶Ë¡£ ÎªÁË½â¾öÕâ¸öÎÊÌâ£¬ Web³ÌÐòÒýÈëÁËCookie»úÖÆÀ´Î¬»¤×´Ì¬¡£
+httpåè®®æ˜¯æ— çŠ¶æ€çš„ï¼ŒåŒä¸€ä¸ªå®¢æˆ·ç«¯çš„è¿™æ¬¡è¯·æ±‚å’Œä¸Šæ¬¡è¯·æ±‚æ˜¯æ²¡æœ‰å¯¹åº”å…³ç³»ï¼Œå¯¹httpæœåŠ¡å™¨æ¥è¯´ï¼Œå®ƒå¹¶ä¸çŸ¥é“è¿™ä¸¤ä¸ªè¯·æ±‚æ¥è‡ªåŒä¸€ä¸ªå®¢æˆ·ç«¯ã€‚ ä¸ºäº†è§£å†³è¿™ä¸ªé—®é¢˜ï¼Œ Webç¨‹åºå¼•å…¥äº†Cookieæœºåˆ¶æ¥ç»´æŠ¤çŠ¶æ€ã€‚
 
-## HTTPÏûÏ¢µÄ½á¹¹
+## HTTPæ¶ˆæ¯çš„ç»“æž„
 
-ÏÈ¿´Request ÏûÏ¢µÄ½á¹¹£¬   Request ÏûÏ¢·ÖÎª3²¿·Ö£¬µÚÒ»²¿·Ö½ÐÇëÇóÐÐ£¬ µÚ¶þ²¿·Ö½Ðhttp header, µÚÈý²¿·ÖÊÇbody. headerºÍbodyÖ®¼äÓÐ¸ö¿ÕÐÐ
+å…ˆçœ‹Request æ¶ˆæ¯çš„ç»“æž„ï¼Œ   Request æ¶ˆæ¯åˆ†ä¸º3éƒ¨åˆ†ï¼Œç¬¬ä¸€éƒ¨åˆ†å«è¯·æ±‚è¡Œï¼Œ ç¬¬äºŒéƒ¨åˆ†å«http header, ç¬¬ä¸‰éƒ¨åˆ†æ˜¯body. headerå’Œbodyä¹‹é—´æœ‰ä¸ªç©ºè¡Œ
 
-## GetºÍPost·½·¨µÄÇø±ð
+## Getå’ŒPostæ–¹æ³•çš„åŒºåˆ«
 
-HttpÐ­Òé¶¨ÒåÁËºÜ¶àÓë·þÎñÆ÷½»»¥µÄ·½·¨£¬×î»ù±¾µÄÓÐ4ÖÖ£¬·Ö±ðÊÇGET,POST,PUT,DELETE. Ò»¸öURLµØÖ·ÓÃÓÚÃèÊöÒ»¸öÍøÂçÉÏµÄ×ÊÔ´£¬¶øHTTPÖÐµÄGET, POST, PUT, DELETE¾Í¶ÔÓ¦×Å¶ÔÕâ¸ö×ÊÔ´µÄ²é£¬¸Ä£¬Ôö£¬É¾4¸ö²Ù×÷¡£ ÎÒÃÇ×î³£¼ûµÄ¾ÍÊÇGETºÍPOSTÁË¡£GETÒ»°ãÓÃÓÚ»ñÈ¡/²éÑ¯×ÊÔ´ÐÅÏ¢£¬¶øPOSTÒ»°ãÓÃÓÚ¸üÐÂ×ÊÔ´ÐÅÏ¢.
+Httpåè®®å®šä¹‰äº†å¾ˆå¤šä¸ŽæœåŠ¡å™¨äº¤äº’çš„æ–¹æ³•ï¼Œæœ€åŸºæœ¬çš„æœ‰4ç§ï¼Œåˆ†åˆ«æ˜¯GET,POST,PUT,DELETE. ä¸€ä¸ªURLåœ°å€ç”¨äºŽæè¿°ä¸€ä¸ªç½‘ç»œä¸Šçš„èµ„æºï¼Œè€ŒHTTPä¸­çš„GET, POST, PUT, DELETEå°±å¯¹åº”ç€å¯¹è¿™ä¸ªèµ„æºçš„æŸ¥ï¼Œæ”¹ï¼Œå¢žï¼Œåˆ 4ä¸ªæ“ä½œã€‚ æˆ‘ä»¬æœ€å¸¸è§çš„å°±æ˜¯GETå’ŒPOSTäº†ã€‚GETä¸€èˆ¬ç”¨äºŽèŽ·å–/æŸ¥è¯¢èµ„æºä¿¡æ¯ï¼Œè€ŒPOSTä¸€èˆ¬ç”¨äºŽæ›´æ–°èµ„æºä¿¡æ¯.
 
-ÎÒÃÇ¿´¿´GETºÍPOSTµÄÇø±ð
-1. GETÌá½»µÄÊý¾Ý»á·ÅÔÚURLÖ®ºó£¬ÒÔ?·Ö¸îURLºÍ´«ÊäÊý¾Ý£¬²ÎÊýÖ®¼äÒÔ&ÏàÁ¬£¬ÈçEditPosts.aspx?name=test1&id=123456.  POST·½·¨ÊÇ°ÑÌá½»µÄÊý¾Ý·ÅÔÚHTTP°üµÄBodyÖÐ.
-2. GETÌá½»µÄÊý¾Ý´óÐ¡ÓÐÏÞÖÆ£¨ÒòÎªä¯ÀÀÆ÷¶ÔURLµÄ³¤¶ÈÓÐÏÞÖÆ£©£¬¶øPOST·½·¨Ìá½»µÄÊý¾ÝÃ»ÓÐÏÞÖÆ.
-3. GET·½Ê½ÐèÒªÊ¹ÓÃRequest.QueryStringÀ´È¡µÃ±äÁ¿µÄÖµ£¬¶øPOST·½Ê½Í¨¹ýRequest.FormÀ´»ñÈ¡±äÁ¿µÄÖµ¡£
-4. GET·½Ê½Ìá½»Êý¾Ý£¬»á´øÀ´°²È«ÎÊÌâ£¬±ÈÈçÒ»¸öµÇÂ¼Ò³Ãæ£¬Í¨¹ýGET·½Ê½Ìá½»Êý¾ÝÊ±£¬ÓÃ»§ÃûºÍÃÜÂë½«³öÏÖÔÚURLÉÏ£¬Èç¹ûÒ³Ãæ¿ÉÒÔ±»»º´æ»òÕßÆäËûÈË¿ÉÒÔ·ÃÎÊÕâÌ¨»úÆ÷£¬¾Í¿ÉÒÔ´ÓÀúÊ·¼ÇÂ¼»ñµÃ¸ÃÓÃ»§µÄÕËºÅºÍÃÜÂë¡£
+æˆ‘ä»¬çœ‹çœ‹GETå’ŒPOSTçš„åŒºåˆ«
+1. GETæäº¤çš„æ•°æ®ä¼šæ”¾åœ¨URLä¹‹åŽï¼Œä»¥?åˆ†å‰²URLå’Œä¼ è¾“æ•°æ®ï¼Œå‚æ•°ä¹‹é—´ä»¥&ç›¸è¿žï¼Œå¦‚EditPosts.aspx?name=test1&id=123456.  POSTæ–¹æ³•æ˜¯æŠŠæäº¤çš„æ•°æ®æ”¾åœ¨HTTPåŒ…çš„Bodyä¸­.
+2. GETæäº¤çš„æ•°æ®å¤§å°æœ‰é™åˆ¶ï¼ˆå› ä¸ºæµè§ˆå™¨å¯¹URLçš„é•¿åº¦æœ‰é™åˆ¶ï¼‰ï¼Œè€ŒPOSTæ–¹æ³•æäº¤çš„æ•°æ®æ²¡æœ‰é™åˆ¶.
+3. GETæ–¹å¼éœ€è¦ä½¿ç”¨Request.QueryStringæ¥å–å¾—å˜é‡çš„å€¼ï¼Œè€ŒPOSTæ–¹å¼é€šè¿‡Request.Formæ¥èŽ·å–å˜é‡çš„å€¼ã€‚
+4. GETæ–¹å¼æäº¤æ•°æ®ï¼Œä¼šå¸¦æ¥å®‰å…¨é—®é¢˜ï¼Œæ¯”å¦‚ä¸€ä¸ªç™»å½•é¡µé¢ï¼Œé€šè¿‡GETæ–¹å¼æäº¤æ•°æ®æ—¶ï¼Œç”¨æˆ·åå’Œå¯†ç å°†å‡ºçŽ°åœ¨URLä¸Šï¼Œå¦‚æžœé¡µé¢å¯ä»¥è¢«ç¼“å­˜æˆ–è€…å…¶ä»–äººå¯ä»¥è®¿é—®è¿™å°æœºå™¨ï¼Œå°±å¯ä»¥ä»ŽåŽ†å²è®°å½•èŽ·å¾—è¯¥ç”¨æˆ·çš„è´¦å·å’Œå¯†ç ã€‚
 
-## ×´Ì¬Âë
+## çŠ¶æ€ç 
 
-Response ÏûÏ¢ÖÐµÄµÚÒ»ÐÐ½Ð×ö×´Ì¬ÐÐ£¬ÓÉHTTPÐ­Òé°æ±¾ºÅ£¬ ×´Ì¬Âë£¬ ×´Ì¬ÏûÏ¢ Èý²¿·Ö×é³É¡£
-×´Ì¬ÂëÓÃÀ´¸æËßHTTP¿Í»§¶Ë£¬HTTP·þÎñÆ÷ÊÇ·ñ²úÉúÁËÔ¤ÆÚµÄResponse.
-HTTP/1.1ÖÐ¶¨ÒåÁË5Àà×´Ì¬Âë£¬ ×´Ì¬ÂëÓÉÈýÎ»Êý×Ö×é³É£¬µÚÒ»¸öÊý×Ö¶¨ÒåÁËÏìÓ¦µÄÀà±ð
-  1XX  ÌáÊ¾ÐÅÏ¢ - ±íÊ¾ÇëÇóÒÑ±»³É¹¦½ÓÊÕ£¬¼ÌÐø´¦Àí
-  2XX  ³É¹¦ - ±íÊ¾ÇëÇóÒÑ±»³É¹¦½ÓÊÕ£¬Àí½â£¬½ÓÊÜ
-  3XX  ÖØ¶¨Ïò - ÒªÍê³ÉÇëÇó±ØÐë½øÐÐ¸ü½øÒ»²½µÄ´¦Àí
-  4XX  ¿Í»§¶Ë´íÎó -  ÇëÇóÓÐÓï·¨´íÎó»òÇëÇóÎÞ·¨ÊµÏÖ
-  5XX  ·þÎñÆ÷¶Ë´íÎó -   ·þÎñÆ÷Î´ÄÜÊµÏÖºÏ·¨µÄÇëÇó
+Response æ¶ˆæ¯ä¸­çš„ç¬¬ä¸€è¡Œå«åšçŠ¶æ€è¡Œï¼Œç”±HTTPåè®®ç‰ˆæœ¬å·ï¼Œ çŠ¶æ€ç ï¼Œ çŠ¶æ€æ¶ˆæ¯ ä¸‰éƒ¨åˆ†ç»„æˆã€‚
+çŠ¶æ€ç ç”¨æ¥å‘Šè¯‰HTTPå®¢æˆ·ç«¯ï¼ŒHTTPæœåŠ¡å™¨æ˜¯å¦äº§ç”Ÿäº†é¢„æœŸçš„Response.
+HTTP/1.1ä¸­å®šä¹‰äº†5ç±»çŠ¶æ€ç ï¼Œ çŠ¶æ€ç ç”±ä¸‰ä½æ•°å­—ç»„æˆï¼Œç¬¬ä¸€ä¸ªæ•°å­—å®šä¹‰äº†å“åº”çš„ç±»åˆ«
+  1XX  æç¤ºä¿¡æ¯ - è¡¨ç¤ºè¯·æ±‚å·²è¢«æˆåŠŸæŽ¥æ”¶ï¼Œç»§ç»­å¤„ç†
+  2XX  æˆåŠŸ - è¡¨ç¤ºè¯·æ±‚å·²è¢«æˆåŠŸæŽ¥æ”¶ï¼Œç†è§£ï¼ŒæŽ¥å—
+  3XX  é‡å®šå‘ - è¦å®Œæˆè¯·æ±‚å¿…é¡»è¿›è¡Œæ›´è¿›ä¸€æ­¥çš„å¤„ç†
+  4XX  å®¢æˆ·ç«¯é”™è¯¯ -  è¯·æ±‚æœ‰è¯­æ³•é”™è¯¯æˆ–è¯·æ±‚æ— æ³•å®žçŽ°
+  5XX  æœåŠ¡å™¨ç«¯é”™è¯¯ -   æœåŠ¡å™¨æœªèƒ½å®žçŽ°åˆæ³•çš„è¯·æ±‚
 
-¿´¿´Ò»Ð©³£¼ûµÄ×´Ì¬Âë
+çœ‹çœ‹ä¸€äº›å¸¸è§çš„çŠ¶æ€ç 
 
 200 OK
-  ×î³£¼ûµÄ¾ÍÊÇ³É¹¦ÏìÓ¦×´Ì¬Âë200ÁË£¬ Õâ±íÃ÷¸ÃÇëÇó±»³É¹¦µØÍê³É£¬ËùÇëÇóµÄ×ÊÔ´·¢ËÍ»Ø¿Í»§¶Ë¡£
+  æœ€å¸¸è§çš„å°±æ˜¯æˆåŠŸå“åº”çŠ¶æ€ç 200äº†ï¼Œ è¿™è¡¨æ˜Žè¯¥è¯·æ±‚è¢«æˆåŠŸåœ°å®Œæˆï¼Œæ‰€è¯·æ±‚çš„èµ„æºå‘é€å›žå®¢æˆ·ç«¯ã€‚
 302 Found
-  ÖØ¶¨Ïò£¬ÐÂµÄURL»áÔÚresponseÖÐµÄLocationÖÐ·µ»Ø£¬ä¯ÀÀÆ÷½«»áÊ¹ÓÃÐÂµÄURL·¢³öÐÂµÄRequest¡£
-  ÀýÈçÔÚIEÖÐÊäÈëhttp://www.google.com. HTTP·þÎñÆ÷»á·µ»Ø304£¬ IEÈ¡µ½ResponseÖÐLocation headerµÄÐÂURL, ÓÖÖØÐÂ·¢ËÍÁËÒ»¸öRequest¡£
+  é‡å®šå‘ï¼Œæ–°çš„URLä¼šåœ¨responseä¸­çš„Locationä¸­è¿”å›žï¼Œæµè§ˆå™¨å°†ä¼šä½¿ç”¨æ–°çš„URLå‘å‡ºæ–°çš„Requestã€‚
+  ä¾‹å¦‚åœ¨IEä¸­è¾“å…¥http://www.google.com. HTTPæœåŠ¡å™¨ä¼šè¿”å›ž304ï¼Œ IEå–åˆ°Responseä¸­Location headerçš„æ–°URL, åˆé‡æ–°å‘é€äº†ä¸€ä¸ªRequestã€‚
 304 Not Modified
-  ´ú±íÉÏ´ÎµÄÎÄµµÒÑ¾­±»»º´æÁË£¬ »¹¿ÉÒÔ¼ÌÐøÊ¹ÓÃ¡£
-400 Bad Request  ¿Í»§¶ËÇëÇóÓëÓï·¨´íÎó£¬²»ÄÜ±»·þÎñÆ÷ËùÀí½â
-403 Forbidden    ·þÎñÆ÷ÊÕµ½ÇëÇó£¬µ«ÊÇ¾Ü¾øÌá¹©·þÎñ
-404 Not Found    ÇëÇó×ÊÔ´²»´æÔÚ£¨Êä´íÁËURL
-500 Internal Server Error ·þÎñÆ÷·¢ÉúÁË²»¿ÉÔ¤ÆÚµÄ´íÎó
-503 Server Unavailable ·þÎñÆ÷µ±Ç°²»ÄÜ´¦Àí¿Í»§¶ËµÄÇëÇó£¬Ò»¶ÎÊ±¼äºó¿ÉÄÜ»Ö¸´Õý³£
-µã»÷ https://luosoo.github.io/blog20170621/ ¼´¿ÉÔ¤ÀÀ
+  ä»£è¡¨ä¸Šæ¬¡çš„æ–‡æ¡£å·²ç»è¢«ç¼“å­˜äº†ï¼Œ è¿˜å¯ä»¥ç»§ç»­ä½¿ç”¨ã€‚
+400 Bad Request  å®¢æˆ·ç«¯è¯·æ±‚ä¸Žè¯­æ³•é”™è¯¯ï¼Œä¸èƒ½è¢«æœåŠ¡å™¨æ‰€ç†è§£
+403 Forbidden    æœåŠ¡å™¨æ”¶åˆ°è¯·æ±‚ï¼Œä½†æ˜¯æ‹’ç»æä¾›æœåŠ¡
+404 Not Found    è¯·æ±‚èµ„æºä¸å­˜åœ¨ï¼ˆè¾“é”™äº†URL
+500 Internal Server Error æœåŠ¡å™¨å‘ç”Ÿäº†ä¸å¯é¢„æœŸçš„é”™è¯¯
+503 Server Unavailable æœåŠ¡å™¨å½“å‰ä¸èƒ½å¤„ç†å®¢æˆ·ç«¯çš„è¯·æ±‚ï¼Œä¸€æ®µæ—¶é—´åŽå¯èƒ½æ¢å¤æ­£å¸¸
+
+
+ç‚¹å‡» https://luosoo.github.io/demos/test/test.html å³å¯é¢„è§ˆ
