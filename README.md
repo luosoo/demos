@@ -72,4 +72,4 @@ HTTP/1.1中定义了5类状态码， 状态码由三位数字组成，第一个�
 503 Server Unavailable 服务器当前不能处理客户端的请求，一段时间后可能恢复正常
 
 
-点击 https://luosoo.github.io/demos/test/test.html 即可预览
+点击 https://luosoo.github.io/demos 即可预览
