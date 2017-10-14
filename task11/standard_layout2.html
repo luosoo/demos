@@ -1,0 +1,28 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title></title>
+        <style>
+            div{ text-align: center;}
+            #header{ min-height: 128px; background: #969696}
+            #container{ min-height: 512px; background: transparent; width: 1002px; margin: 0 auto;}
+            #footer{ min-height: 256px; background: #969696;}
+            .clearfix{*zoom:1}
+            .clearfix:after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+            .leftside{ width: 20%; background: #66CC00; float: left; min-height: 384px;}
+            .rightside{width: 78%; background: #996600; float: right; min-height: 512px;}
+        </style>
+    </head>
+    <body>
+        <div id="header">双列布局头部</div>
+        <div id="container" class="clearfix">
+            <div class="leftside">双列左侧</div>
+            <div class="rightside">双列右侧</div>
+        </div>
+        <div id="footer">双列布局脚部</div>
+    </body>
+</html>

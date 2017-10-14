@@ -1,0 +1,27 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title></title>
+        <style>
+            div{ text-align: center;}
+            #header{ min-height: 128px; background: #969696}
+            #container{background: transparent; width: 600px; margin: 0 auto;}
+            #footer{ min-height: 256px; background: #969696;}
+            .clearfix{*zoom:1}
+            .clearfix:after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #container>div{ width: 50%; float: left; height: 32px;}
+            .leftside{background: red;}
+            .rightside{background: blue;}
+        </style>
+    </head>
+    <body>
+        <div id="container" class="clearfix">
+            <div class="leftside"></div>
+            <div class="rightside"></div>
+        </div>
+    </body>
+</html>

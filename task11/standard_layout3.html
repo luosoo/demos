@@ -1,0 +1,30 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title></title>
+        <style>
+            div{ text-align: center;}
+            #header{ min-height: 128px; background: #969696}
+            #container{ min-height: 512px; background: #0099FF; width: 1002px; margin: 0 auto;}
+            #footer{ min-height: 256px; background: #969696;}
+            .clearfix{*zoom:1}
+            .clearfix:after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+            .leftside{ width: 20%; background: #66CC00; float: left; min-height: 400px;}
+            .middleside{ width: 30%; background: #333366; float: left; min-height: 512px; margin: 0 5%}
+            .rightside{width: 40%; background: #996600; float: right; min-height: 384px;}
+        </style>
+    </head>
+    <body>
+        <div id="header">三列布局头部</div>
+        <div id="container" class="clearfix">
+            <div class="leftside">三列左侧</div>
+            <div class="middleside">三列中间</div>
+            <div class="rightside">三列右侧</div>
+        </div>
+        <div id="footer">三列布局脚部</div>
+    </body>
+</html>
