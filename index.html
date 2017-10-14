@@ -5,12 +5,14 @@
         <style>
             .box1{width:100px; height: 100px; border:10px solid red; margin: 50px; padding:50px;}
             .box2{width:100px; height: 100px; border:10px solid red; margin: 50px; padding:50px; box-sizing: border-box; float: left;}
+            .box3{ width: 100px; height: 100px; border: 10px solid green; margin: 30px;} /*遵循块级模式上下文格式，margin合并*/
         </style>
     </head>
     <body>
         <h1>我是首页</h1>
         <p>你想咋滴</p>
         <div class="box1"></div>
+        <div class="box3"></div>
         <div class="box2"></div>
         <div class="box2"></div>
         <div class="box2"></div>
