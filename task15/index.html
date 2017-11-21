@@ -1,0 +1,235 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <title>demo</title>
+        <style>
+        @font-face {font-family: "iconfont";
+            src: url('font/iconfont.eot?t=1510280661464'); /* IE9*/
+            src: url('font/iconfont.eot?t=1510280661464#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+            url('font/iconfont.ttf?t=1510280661464') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+            url('font/iconfont.svg?t=1510280661464#iconfont') format('svg'); /* iOS 4.1- */
+        }
+        .iconfont {
+            font-family:"iconfont" !important;
+            font-size:16px;
+            font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="navbar">
+            <div id="logo"><a href="#">海南三宝</a></div>
+            <ul class="nav">
+                <li><a href="#">首　页</a></li>
+                <li><a href="#">海南黄花梨</a></li>
+                <li><a href="#">海洋瑰宝</a></li>
+                <li><a href="#">沉　香</a></li>
+                <li><a href="#">联系经销商</a></li>
+            </ul>
+        </div>
+        <div id="header">
+            <h2>我们诚邀各位藏家朋友就海南三宝藏品文化深入交流，为弘扬传统文化及艺术价值做出更大的贡献！</h2>
+            <h1>海南三宝收藏馆</h1>
+            <p><a href="#" class="button">了解更多</a></p>
+        </div>
+        <section>
+            <div class="container wrap">
+                <h1>客户服务</h1>
+                <h2>源于花梨之乡，独具天然优势资源，融汇艺术大师的精髓思想，得以巧夺天工的非凡展现。</h2>
+                <ul class="services-list">
+                    <li>
+                        <i class="iconfont">&#xe600;</i>
+                        <h4>在线订单</h4>
+                        <p>在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情</p>
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe602;</i>
+                        <h4>网络服务</h4>
+                        <p>在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情</p>
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe601;</i>
+                        <h4>体验店计划</h4>
+                        <p>在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情在线订单的详情</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="bg-color-gray">
+            <div class="container wrap">
+                <h1>产品资源</h1>
+                <h2>源于花梨之乡，独具天然优势资源，融汇艺术大师的精髓思想，得以巧夺天工的非凡展现。</h2>
+                <ul class="products-list">
+                    <li>
+                        <a href="#">+</a>
+                        <img src="images/1.jpg" alt="">
+                        <h4>梨花木</h4>
+                        <p>这是描述十分名贵</p>
+                    </li>
+                    <li>
+                        <a href="#">+</a>
+                        <img src="images/1.jpg" alt="">
+                        <h4>梨花木</h4>
+                        <p>这是描述十分名贵</p>
+                    </li>
+                    <li>
+                        <a href="#">+</a>
+                        <img src="images/1.jpg" alt="">
+                        <h4>梨花木</h4>
+                        <p>这是描述十分名贵</p>
+                    </li>
+                    <li>
+                        <a href="#">+</a>
+                        <img src="images/1.jpg" alt="">
+                        <h4>梨花木</h4>
+                        <p>这是描述十分名贵</p>
+                    </li>
+                    <li>
+                        <a href="#">+</a>
+                        <img src="images/1.jpg" alt="">
+                        <h4>梨花木</h4>
+                        <p>这是描述十分名贵</p>
+                    </li>
+                    <li>
+                        <a href="#">+</a>
+                        <img src="images/1.jpg" alt="">
+                        <h4>梨花木</h4>
+                        <p>这是描述十分名贵</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container wrap">
+                <h1>行业发展</h1>
+                <h2>源于花梨之乡，独具天然优势资源，融汇艺术大师的精髓思想，得以巧夺天工的非凡展现。</h2>
+                <ul class="about-list">
+                    <li>
+                        <img src="images/about1.jpg" alt="">
+                        <div>
+                            <time>2009-2011</time>
+                            <h2>事件名称</h2>
+                            <p>事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/about1.jpg" alt="">
+                        <div>
+                            <time>2009-2011</time>
+                            <h2>事件名称</h2>
+                            <p>事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/about1.jpg" alt="">
+                        <div>
+                            <time>2009-2011</time>
+                            <h2>事件名称</h2>
+                            <p>事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/about1.jpg" alt="">
+                        <div>
+                            <time>2009-2011</time>
+                            <h2>事件名称</h2>
+                            <p>事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述事件描述</p>
+                        </div>
+                    </li>
+                    <li class="end">
+                        <span>BE PART OF OUR STORY!</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="bg-color-gray">
+            <div class="container wrap">
+                <h1>业界知名人士</h1>
+                <h2>源于花梨之乡，独具天然优势资源，融汇艺术大师的精髓思想，得以巧夺天工的非凡展现。</h2>
+                <ul class="celebrity-list">
+                    <li>
+                        <img src="images/fms.jpg" alt="">
+                        <h2>名人姓名</h2>
+                        <p>名人描述</p>
+                        <div>
+                            <a href="" class="iconfont">&#xe61e;</a>
+                            <a href="" class="iconfont">&#xe65f;</a>
+                            <a href="" class="iconfont">&#xe608;</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/fms.jpg" alt="">
+                        <h2>名人姓名</h2>
+                        <p>名人描述</p>
+                        <div>
+                            <a href="" class="iconfont">&#xe61e;</a>
+                            <a href="" class="iconfont">&#xe65f;</a>
+                            <a href="" class="iconfont">&#xe608;</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/fms.jpg" alt="">
+                        <h2>名人姓名</h2>
+                        <p>名人描述</p>
+                        <div>
+                            <a href="" class="iconfont">&#xe61e;</a>
+                            <a href="" class="iconfont">&#xe65f;</a>
+                            <a href="" class="iconfont">&#xe608;</a>
+                        </div>
+                    </li>
+                </ul>
+                <p>这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述这是一段描述</p>
+            </div>
+        </section>
+        <div class="wrap">
+            <ul class="link">
+                <li><img src="images/linkimg1.jpg" alt=""></li>
+                <li><img src="images/linkimg1.jpg" alt=""></li>
+                <li><img src="images/linkimg1.jpg" alt=""></li>
+                <li><img src="images/linkimg1.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div id="footer">
+            <div class="wrap">
+                <h1>联系我们</h1>
+                <h2>联系我们具体方式</h2>
+                <form action="">
+                <div class="clearfix">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <input type="text" placeholder="Your Name *">
+                            </li>
+                            <li>
+                                <input type="text" placeholder="Your Email *">
+                            </li>
+                            <li>
+                                <input type="text" placeholder="Your Phone *">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="message">
+                        <textarea name="" id="" placeholder="Your Message *"></textarea>
+                    </div>
+                </div>
+                <div class="submit"><input class="button" type="submit" value="提 交"></div>
+                </form>
+            </div>
+        </div>
+        <div class="copyright wrap">
+            <div>Copyright © Your Website 2017</div>
+            <div class="peck">
+                <a href="" class="iconfont">&#xe61e;</a>
+                <a href="" class="iconfont">&#xe65f;</a>
+                <a href="" class="iconfont">&#xe608;</a>
+            </div>
+            <div><a href="">Privacy Policy</a>　<a href="">Terms of Use</a></div>
+        </div>
+    </body>
+</html>
